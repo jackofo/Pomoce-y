@@ -61,27 +61,27 @@
                                        <div class="form-group">  
                                            <div class="col-md-"></div>  
                                            <label class="col-md-12 control-label" for="prependedcheckbox">  
-                                               User ID  
+                                               Login 
                                            </label>  
                                            <div class="col-md-12">  
                                                <div class="input-group">  
                                                    <span class="input-group-addon">  
                                                        <i class="fa fa-user"></i>  
                                                    </span>  
-                                                   <asp:TextBox ID="txtUserName" CssClass="form-control" placeholder="Enter User ID" runat="server"></asp:TextBox>  
+                                                   <asp:TextBox ID="txtUserName" CssClass="form-control" placeholder="Podaj Login" runat="server"></asp:TextBox>  
                                                </div>  
                                                <asp:Label ID="lblErrUserName" CssClass="help-block" runat="server" Text="" ForeColor="White"></asp:Label>  
                                            </div>  
   
                                            <label class="col-md-12 control-label" for="prependedcheckbox">  
-                                               Password  
+                                               Hasło 
                                            </label>  
                                            <div class="col-md-12">  
                                                <div class="input-group">  
                                                    <span class="input-group-addon">  
                                                        <i class="fa fa-lock"></i>  
                                                    </span>  
-                                                   <asp:TextBox ID="txtPassword" CssClass="form-control" placeholder="Enter Your Password" runat="server" TextMode="Password"></asp:TextBox>  
+                                                   <asp:TextBox ID="txtPassword" CssClass="form-control" placeholder="Podaj hasło" runat="server" TextMode="Password"></asp:TextBox>  
                                                </div>  
                                                <asp:Label ID="lblErrPassword" CssClass="help-block" runat="server" Text="" ForeColor="White"></asp:Label>  
                                            </div>  

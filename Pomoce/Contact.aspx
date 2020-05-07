@@ -1,17 +1,26 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Pomoce.Contact" %>
+﻿<%@ Page Title="Kontakt" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Pomoce.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+        Dariusz Bożejewicz<br />
+        <abbr title="Email">E:</abbr>
+        18562@student.pwsz.elblag.pl
     </address>
-
     <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        Jacek Bujalski<br />
+        <abbr title="Email">E:</abbr>
+        18564@student.pwsz.elblag.pl
+    </address>
+    <address>
+        Rafał Błaszkiewicz<br />
+        <abbr title="Email">E:</abbr>
+        18718@student.pwsz.elblag.pl
+    </address>
+    <address>
+        Jacek Jachimczyk<br />
+        <abbr title="Email">E:</abbr>
+        18573@student.pwsz.elblag.pl
     </address>
 </asp:Content>
