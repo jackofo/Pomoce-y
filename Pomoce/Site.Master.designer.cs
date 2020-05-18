@@ -24,6 +24,15 @@ namespace Pomoce
         protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadPlaceHolder1;
 
         /// <summary>
+        /// Kontrolka LoginView1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LoginView LoginView1;
+
+        /// <summary>
         /// Kontrolka MainContent.
         /// </summary>
         /// <remarks>

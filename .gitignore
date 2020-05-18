@@ -2,3 +2,6 @@
 /[Pp]omoce/[Oo]bj/
 /[Hh]angman/[Ll]ibrary/
 /[Hh]angman/[Aa]ssets/[Ll]ibrary/
+.gitignore.orig
+.vs/Pomoce/v16/.suo
+Pomoce/obj/Debug/Pomoce.csprojAssemblyReference.cache
