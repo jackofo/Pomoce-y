@@ -3,7 +3,11 @@
 <asp:Content ID="Content0" ContentPlaceHolderID="HeadPlaceHolder1" runat="server">
     <script src="Build/UnityLoader.js"></script>
     <script>
-        UnityLoader.instantiate("unityContainer", "Build/op.json");
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/hm.json");
+
+        function GetStrings() {
+            unityInstance.SendMessage('EventSystem', 'GetStrings', 'makaron');
+        }
     </script>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">

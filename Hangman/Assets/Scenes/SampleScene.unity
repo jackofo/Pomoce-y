@@ -2250,7 +2250,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1055115609}
+      - m_Target: {fileID: 0}
         m_MethodName: NewWord
         m_Mode: 1
         m_Arguments:
@@ -5668,30 +5668,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055115605}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 193070e6449e106408476287aca75c41, type: 3}
+  m_Script: {fileID: 11500000, guid: 61c950a2288c8134a874f4f2079c28fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hangman:
-  - {fileID: 1892444316}
-  - {fileID: 1439565232}
-  - {fileID: 1181014379}
-  - {fileID: 377319927}
-  - {fileID: 1551399269}
-  - {fileID: 1303009062}
-  - {fileID: 1421281991}
-  - {fileID: 1347781247}
-  - {fileID: 693843185}
-  - {fileID: 1439066240}
-  - {fileID: 1469252173}
-  endScreen: {fileID: 837033330}
-  file: {fileID: 4900000, guid: ae63a135cd409594697f8120560b9a89, type: 3}
-  loseCounterText: {fileID: 380350098}
-  firstLetterBoxPosition: {fileID: 672371847}
-  canvas: {fileID: 1641995515}
-  letterBox: {fileID: 5586463353962594283, guid: 2196cbaa1e1798441adc785ea4c00aa0,
-    type: 3}
-  input: {fileID: 395186968}
-  distance: 55
 --- !u!1 &1083250635
 GameObject:
   m_ObjectHideFlags: 0
@@ -11536,6 +11515,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931020991}
   m_CullTransparentMesh: 0
+--- !u!1 &1940729013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1940729015}
+  - component: {fileID: 1940729014}
+  m_Layer: 0
+  m_Name: GameLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1940729014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940729013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 193070e6449e106408476287aca75c41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hangman:
+  - {fileID: 1892444316}
+  - {fileID: 1439565232}
+  - {fileID: 1181014379}
+  - {fileID: 377319927}
+  - {fileID: 1551399269}
+  - {fileID: 1303009062}
+  - {fileID: 1421281991}
+  - {fileID: 1347781247}
+  - {fileID: 693843185}
+  - {fileID: 1439066240}
+  - {fileID: 1469252173}
+  endScreen: {fileID: 837033330}
+  textdata: 
+  loseCounterText: {fileID: 380350098}
+  firstLetterBoxPosition: {fileID: 672371847}
+  canvas: {fileID: 1641995515}
+  letterBox: {fileID: 5586463353962594283, guid: 2196cbaa1e1798441adc785ea4c00aa0,
+    type: 3}
+  input: {fileID: 395186968}
+  distance: 55
+--- !u!4 &1940729015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940729013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 227.48994, y: 109.08763, z: -104.64859}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1949874508
 GameObject:
   m_ObjectHideFlags: 0
