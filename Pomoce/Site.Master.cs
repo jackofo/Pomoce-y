@@ -11,7 +11,14 @@ namespace Pomoce
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+            
+        }
 
-		}
-	}
+        protected void SignOut(object sender, EventArgs e)
+        {
+            var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+            authenticationManager.SignOut();
+            Response.Redirect("~/Login.aspx");
+        }
+    }
 }

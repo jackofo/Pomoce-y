@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Moja aplikacja platformy ASP.NET</title>
+    <title><%: Page.Title %> - Pomoce-y ASP.NET</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -40,7 +40,6 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -49,14 +48,26 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Nazwa aplikacji</a>
+                    <a class="navbar-brand" runat="server" href="~/">POMOCE-Y</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Strona główna</a></li>
+                        <li>
+                            <a runat="server" href="~/">Strona główna</a>
+                        </li>
                         <asp:LoginView ID="LoginView1" runat="server">
-                            <li><a runat="server" href="~/Login">Login</a></li>
-                            <li><a runat="server" href="~/Register">Register</a></li>
+                            <AnonymousTemplate>
+                                <li>
+                                    <a runat="server" href="~/Login">Login</a>
+                                </li>
+                                <li>
+                                    <a runat="server" href="~/Register">Register</a>
+                                </li>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <li><asp:LinkButton runat="server" OnClick="SignOut">Log out</asp:LinkButton>
+                                </li>
+                            </LoggedInTemplate>
                         </asp:LoginView>
                     </ul>
                 </div>
@@ -67,10 +78,9 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Moja aplikacja platformy ASP.NET</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Pomoce-y ASP.NET</p>
             </footer>
         </div>
-
     </form>
 </body>
 </html>

@@ -152,6 +152,7 @@
   <ItemGroup>
     <Content Include="App_Apps\hangman\Build\UnityLoader.js" />
     <Content Include="App_Apps\hangman\CreateHangmanApp.aspx" />
+    <Content Include="App_Apps\hangman\HangmanCreator.aspx" />
     <Content Include="App_Apps\hangman\index.html" />
     <Content Include="App_Apps\hangman\TemplateData\favicon.ico" />
     <Content Include="App_Apps\hangman\TemplateData\fullscreen.png" />
@@ -252,6 +253,13 @@
     </Compile>
     <Compile Include="App_Apps\hangman\CreateHangmanApp.aspx.designer.cs">
       <DependentUpon>CreateHangmanApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Apps\hangman\HangmanCreator.aspx.cs">
+      <DependentUpon>HangmanCreator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Apps\hangman\HangmanCreator.aspx.designer.cs">
+      <DependentUpon>HangmanCreator.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
