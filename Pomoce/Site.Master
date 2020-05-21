@@ -52,8 +52,14 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <li class ="nav-item">
                             <a runat="server" href="~/">Strona główna</a>
+                        </li>
+                        <li class ="nav-item">
+                            <a runat="server" href="~/">Informacje</a>
+                        </li>
+                         <li class ="nav-item">
+                            <a runat="server" href="~/">Kontakt</a>
                         </li>
                         <asp:LoginView ID="LoginView1" runat="server">
                             <AnonymousTemplate>
