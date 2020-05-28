@@ -150,9 +150,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Apps\AppBrowser.aspx" />
+    <Content Include="App_Apps\AppCreator.aspx" />
     <Content Include="App_Apps\hangman\Build\UnityLoader.js" />
     <Content Include="App_Apps\hangman\CreateHangmanApp.aspx" />
-    <Content Include="App_Apps\hangman\HangmanCreator.aspx" />
     <Content Include="App_Apps\hangman\index.html" />
     <Content Include="App_Apps\hangman\TemplateData\favicon.ico" />
     <Content Include="App_Apps\hangman\TemplateData\fullscreen.png" />
@@ -165,10 +166,6 @@
     <Content Include="App_Apps\hangman\TemplateData\style.css" />
     <Content Include="App_Apps\hangman\TemplateData\UnityProgress.js" />
     <Content Include="App_Apps\hangman\TemplateData\webgl-logo.png" />
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -191,29 +188,13 @@
     <Content Include="App_Apps\hangman\Build\hm.wasm" />
     <Content Include="App_Apps\hangman\Build\hm.wasm.framework.unityweb" />
     <Content Include="App_Apps\hangman\Build\hm.wasm.code.unityweb" />
-    <EntityDeploy Include="Model\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <Content Include="Login.aspx" />
-    <Content Include="Model\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="App_Apps\hangman\HangmanTest.aspx" />
-    <Content Include="Model\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\HangmanCreator.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -247,19 +228,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Apps\AppBrowser.aspx.cs">
+      <DependentUpon>AppBrowser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Apps\AppBrowser.aspx.designer.cs">
+      <DependentUpon>AppBrowser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Apps\AppCreator.aspx.cs">
+      <DependentUpon>AppCreator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Apps\AppCreator.aspx.designer.cs">
+      <DependentUpon>AppCreator.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Apps\hangman\CreateHangmanApp.aspx.cs">
       <DependentUpon>CreateHangmanApp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="App_Apps\hangman\CreateHangmanApp.aspx.designer.cs">
       <DependentUpon>CreateHangmanApp.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="App_Apps\hangman\HangmanCreator.aspx.cs">
-      <DependentUpon>HangmanCreator.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="App_Apps\hangman\HangmanCreator.aspx.designer.cs">
-      <DependentUpon>HangmanCreator.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -287,21 +275,14 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Model\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Model\AppType.cs" />
+    <Compile Include="Model\AspNetRole.cs" />
+    <Compile Include="Model\AspNetUser.cs" />
+    <Compile Include="Model\AspNetUserClaim.cs" />
+    <Compile Include="Model\AspNetUserLogin.cs" />
+    <Compile Include="Model\C__MigrationHistory.cs" />
+    <Compile Include="Model\Model1.cs" />
+    <Compile Include="Model\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -347,7 +328,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
