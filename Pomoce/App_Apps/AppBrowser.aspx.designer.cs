@@ -11,25 +11,43 @@ namespace Pomoce.App_Apps
 {
 
 
-    public partial class AppBrowser
-    {
+	public partial class AppBrowser
+	{
 
-        /// <summary>
-        /// Kontrolka GridView1.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+		/// <summary>
+		/// Kontrolka TextBox1.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
-        /// <summary>
-        /// Kontrolka SqlDataSource1.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-    }
+		/// <summary>
+		/// Kontrolka LinkButton1.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
+
+		/// <summary>
+		/// Kontrolka Repeater1.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Repeater Repeater1;
+
+		/// <summary>
+		/// Kontrolka SqlDataSource1.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+	}
 }

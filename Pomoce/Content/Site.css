@@ -29,3 +29,14 @@ textarea {
         padding: 0;
     }
 }
+
+.custom01
+{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShYvhN343tGi8y1gYmBwN8U-it_3VSzWTbxw&usqp=CAU) no-repeat center; 
+    
+}
+
+    .custom01:hover
+    {
+        background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcShYvhN343tGi8y1gYmBwN8U-it_3VSzWTbxw&usqp=CAU);
+    }

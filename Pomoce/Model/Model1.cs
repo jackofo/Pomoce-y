@@ -1,11 +1,8 @@
 namespace Pomoce.Model
 {
-    using System;
-    using System.Data.Entity;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
+	using System.Data.Entity;
 
-    public partial class Model1 : DbContext
+	public partial class Model1 : DbContext
     {
         public Model1()
             : base("name=Model11")

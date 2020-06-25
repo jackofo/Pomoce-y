@@ -152,20 +152,20 @@
   <ItemGroup>
     <Content Include="App_Apps\AppBrowser.aspx" />
     <Content Include="App_Apps\AppCreator.aspx" />
-    <Content Include="App_Apps\hangman\Build\UnityLoader.js" />
-    <Content Include="App_Apps\hangman\CreateHangmanApp.aspx" />
-    <Content Include="App_Apps\hangman\index.html" />
-    <Content Include="App_Apps\hangman\TemplateData\favicon.ico" />
-    <Content Include="App_Apps\hangman\TemplateData\fullscreen.png" />
-    <Content Include="App_Apps\hangman\TemplateData\progressEmpty.Dark.png" />
-    <Content Include="App_Apps\hangman\TemplateData\progressEmpty.Light.png" />
-    <Content Include="App_Apps\hangman\TemplateData\progressFull.Dark.png" />
-    <Content Include="App_Apps\hangman\TemplateData\progressFull.Light.png" />
-    <Content Include="App_Apps\hangman\TemplateData\progressLogo.Dark.png" />
-    <Content Include="App_Apps\hangman\TemplateData\progressLogo.Light.png" />
-    <Content Include="App_Apps\hangman\TemplateData\style.css" />
-    <Content Include="App_Apps\hangman\TemplateData\UnityProgress.js" />
-    <Content Include="App_Apps\hangman\TemplateData\webgl-logo.png" />
+    <Content Include="App_Apps\Hangman\Build\UnityLoader.js" />
+    <Content Include="App_Apps\Hangman\CreateHangmanApp.aspx" />
+    <Content Include="App_Apps\Hangman\index.html" />
+    <Content Include="App_Apps\Hangman\TemplateData\favicon.ico" />
+    <Content Include="App_Apps\Hangman\TemplateData\fullscreen.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\progressEmpty.Dark.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\progressEmpty.Light.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\progressFull.Dark.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\progressFull.Light.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\progressLogo.Dark.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\progressLogo.Light.png" />
+    <Content Include="App_Apps\Hangman\TemplateData\style.css" />
+    <Content Include="App_Apps\Hangman\TemplateData\UnityProgress.js" />
+    <Content Include="App_Apps\Hangman\TemplateData\webgl-logo.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -183,14 +183,15 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="App_Apps\hangman\Build\hm.data.unityweb" />
-    <Content Include="App_Apps\hangman\Build\hm.json" />
-    <Content Include="App_Apps\hangman\Build\hm.wasm" />
-    <Content Include="App_Apps\hangman\Build\hm.wasm.framework.unityweb" />
-    <Content Include="App_Apps\hangman\Build\hm.wasm.code.unityweb" />
+    <Content Include="App_Apps\Hangman\Build\hm.data.unityweb" />
+    <Content Include="App_Apps\Hangman\Build\hm.json" />
+    <Content Include="App_Apps\Hangman\Build\hm.wasm" />
+    <Content Include="App_Apps\Hangman\Build\hm.wasm.framework.unityweb" />
+    <Content Include="App_Apps\Hangman\Build\hm.wasm.code.unityweb" />
+    <Content Include="Images\Hangman.png" />
     <Content Include="Login.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="App_Apps\hangman\HangmanTest.aspx" />
+    <Content Include="App_Apps\Hangman\Hangman.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -242,11 +243,11 @@
     <Compile Include="App_Apps\AppCreator.aspx.designer.cs">
       <DependentUpon>AppCreator.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Apps\hangman\CreateHangmanApp.aspx.cs">
+    <Compile Include="App_Apps\Hangman\CreateHangmanApp.aspx.cs">
       <DependentUpon>CreateHangmanApp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App_Apps\hangman\CreateHangmanApp.aspx.designer.cs">
+    <Compile Include="App_Apps\Hangman\CreateHangmanApp.aspx.designer.cs">
       <DependentUpon>CreateHangmanApp.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -261,12 +262,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="App_Apps\hangman\HangmanTest.aspx.cs">
-      <DependentUpon>HangmanTest.aspx</DependentUpon>
+    <Compile Include="App_Apps\Hangman\Hangman.aspx.cs">
+      <DependentUpon>Hangman.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="App_Apps\hangman\HangmanTest.aspx.designer.cs">
-      <DependentUpon>HangmanTest.aspx</DependentUpon>
+    <Compile Include="App_Apps\Hangman\Hangman.aspx.designer.cs">
+      <DependentUpon>Hangman.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
