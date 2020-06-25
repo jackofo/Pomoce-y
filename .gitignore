@@ -5,3 +5,5 @@
 .gitignore.orig
 .vs/Pomoce/v16/.suo
 Pomoce/obj/Debug/Pomoce.csprojAssemblyReference.cache
+Pomoce/App_Data/DefaultConnection.mdf
+Pomoce/App_Data/DefaultConnection_log.ldf

@@ -16,6 +16,7 @@ namespace Pomoce.Model
         public virtual DbSet<AspNetUserLogin> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUser> AspNetUsers { get; set; }
         public virtual DbSet<UserApp> UserApps { get; set; }
+        public virtual DbSet<UserScore> UsersScores { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

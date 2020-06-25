@@ -11,25 +11,25 @@ namespace Pomoce
 {
 
 
-	public partial class HangmanTest
+	public partial class MyScores
 	{
 
 		/// <summary>
-		/// Kontrolka submitscore.
+		/// Kontrolka SqlDataSource1.
 		/// </summary>
 		/// <remarks>
 		/// Pole generowane automatycznie.
 		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.HiddenField submitscore;
+		protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
 		/// <summary>
-		/// Kontrolka btn.
+		/// Kontrolka GridView1.
 		/// </summary>
 		/// <remarks>
 		/// Pole generowane automatycznie.
 		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Button btn;
+		protected global::System.Web.UI.WebControls.GridView GridView1;
 	}
 }

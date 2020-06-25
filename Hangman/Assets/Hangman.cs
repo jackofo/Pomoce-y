@@ -107,9 +107,10 @@ public class Hangman : MonoBehaviour
                 counterr++;
         }
 
-        endScreen.GetComponentInChildren<TextMeshProUGUI>().text = counterr.ToString();
+        endScreen.GetComponentInChildren<TextMeshProUGUI>().text = "Score: " + counterr.ToString();
         endScreen.enabled = true;
         endScreen.GetComponentInChildren<RectTransform>().gameObject.SetActive(true);
+        Application.ExternalCall("SubmitScore", counterr);
     }
 
     public void NewWord()
