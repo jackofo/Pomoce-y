@@ -21,7 +21,7 @@ namespace Pomoce.App_Apps
 
 		protected void Button1_Click(object sender, EventArgs e)
 		{
-			SqlDataSource1.SelectCommand = "SELECT [Table].[Id], [Table].[Name], [AppTypes].[Name] as 'Type' FROM [Table] JOIN [AppTypes] ON [Table].[AppType]=[AppTypes].Id WHERE [Table].[Name] LIKE '%" + TextBox1.Text + "%';";
+			SqlDataSource1.SelectCommand = "SELECT [UserApps].[Id], [UserApps].[Name], [AppTypes].[Name] as 'Type' FROM [UserApps] JOIN [AppTypes] ON [UserApps].[AppType]=[AppTypes].Id WHERE [UserApps].[Name] LIKE '%" + TextBox1.Text + "%';";
 		}
 	}
 }

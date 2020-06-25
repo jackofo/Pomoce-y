@@ -6,14 +6,15 @@ using System.Web;
 using System.Web.DynamicData;
 using System.Web.UI.WebControls;
 
+using Pomoce.Models;
+
 namespace Pomoce.Model
 {
-	[Table("UsersScores")]
 	public class UserScore
 	{
 		public Guid Id { get; set; }
 		public int Score { get; set; }
-		public AspNetUser User { get; set; }
+		public ApplicationUser User { get; set; }
 		public UserApp App { get; set; }
 	}
 }

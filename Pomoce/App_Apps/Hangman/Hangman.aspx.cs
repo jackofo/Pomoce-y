@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading;
 using System.Web.UI.WebControls;
 
+using Pomoce.Models;
+
 namespace Pomoce
 {
 	public partial class HangmanTest : System.Web.UI.Page
@@ -17,7 +19,7 @@ namespace Pomoce
 		protected void Page_Load(object sender, EventArgs e)
 		{
 			appId = Guid.Parse(Request.QueryString["id"]);
-			using (var _db = new Model1())
+			using (var _db = new ApplicationDbContext())
 			{
 				data = _db.UserApps.First(ua => ua.Id == appId).Data;
 			}
@@ -33,11 +35,11 @@ namespace Pomoce
 		{
 			if (User.Identity.IsAuthenticated)
 			{
-				using (var model = new Model1())
+				using (var model = new ApplicationDbContext())
 				{
 					var id = User.Identity.GetUserId();
 					var app = model.UserApps.First(a => a.Id == appId);
-					var user = model.AspNetUsers.First(u => u.Id == id);
+					var user = model.Users.First(u => u.Id == id);
 					model.UsersScores.Add(
 						new UserScore 
 						{ 
@@ -48,6 +50,7 @@ namespace Pomoce
 						);
 					model.SaveChanges();
 				}
+				Response.Redirect("~/MyScores");
 			}
 		}
 	}

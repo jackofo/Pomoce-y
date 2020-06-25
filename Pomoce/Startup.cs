@@ -7,15 +7,11 @@ using Owin;
 
 namespace Pomoce
 {
-    public class Startup
+    public partial class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseCookieAuthentication(new CookieAuthenticationOptions
-            {
-                AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Login")
-            });
+            ConfigureAuth(app);
         }
     }
 }

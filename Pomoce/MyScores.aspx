@@ -5,7 +5,11 @@
     <hr />
     <h2>My scores:</h2>
     <hr />
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Model1 %>" SelectCommand="SELECT [Table].Name, UsersScores.Score FROM UsersScores INNER JOIN [Table] ON UsersScores.App_Id = [Table].Id"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Model1 %>" SelectCommand="SELECT [UserApps].Name, UserScores.Score FROM UserScores INNER JOIN [UserApps] ON UserScores.User_Id = @UserId">
+        <SelectParameters>
+            <asp:Parameter Name="UserId" DbType="String" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None">
     <AlternatingRowStyle BorderStyle="None" />
     <Columns>

@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
+
+using Pomoce.Model;
+
 using System;
 using System.Web;
 using System.Web.UI.WebControls;
@@ -28,23 +31,23 @@ namespace Pomoce
 
         protected void SignIn(object sender, EventArgs e)
         {
-            var userStore = new UserStore<IdentityUser>();
-            var userManager = new UserManager<IdentityUser>(userStore);
-            var user = userManager.Find(UserName.Text, Password.Text);
+            //var userStore = new AspNetUserStore();
+            //var userManager = new AspNetUserManager(userStore);
+            //var user = userManager.Find(UserName.Text, Password.Text);
 
-            if (user != null)
-            {
-                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
-                var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+            //if (user != null)
+            //{
+            //    var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+            //    var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
 
-                authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
-                Response.Redirect("~/Login.aspx");
-            }
-            else
-            {
-                StatusText.Text = "Invalid username or password.";
-                LoginStatus.Visible = true;
-            }
+            //    authenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, userIdentity);
+            //    Response.Redirect("~/Login.aspx");
+            //}
+            //else
+            //{
+            //    StatusText.Text = "Invalid username or password.";
+            //    LoginStatus.Visible = true;
+            //}
         }
 
         protected void SignOut(object sender, EventArgs e)

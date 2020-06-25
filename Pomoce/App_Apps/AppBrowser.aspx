@@ -31,7 +31,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <hr />
     <div class="input-group">
-        <asp:TextBox class="form-control" ID="TextBox1" runat="server" aria-label="Search" type="text" Width="70%" />
+        <asp:TextBox class="form-control" ID="TextBox1" runat="server" aria-label="Search" type="text" Width="70%" ToolTip="Search" ValidateRequestMode="Disabled" />
         <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Button1_Click" type="button" CssClass="btn btn-primary">
                     <span class="glyphicon glyphicon-search"></span>
         </asp:LinkButton>
@@ -53,7 +53,7 @@
     <asp:SqlDataSource
         ID="SqlDataSource1"
         runat="server"
-        ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DefaultConnection;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework"
+        ConnectionString="***REMOVED***"
         ProviderName="System.Data.SqlClient"
-        SelectCommand="SELECT [Table].[Id], [Table].[Name], [AppTypes].[Name] as 'Type' FROM [Table] JOIN [AppTypes] ON [Table].[AppType]=[AppTypes].Id"></asp:SqlDataSource>
+        SelectCommand="SELECT [UserApps].[Id], [UserApps].[Name], [AppTypes].[Name] as 'Type' FROM [UserApps] JOIN [AppTypes] ON [UserApps].[AppType]=[AppTypes].Id"></asp:SqlDataSource>
 </asp:Content>

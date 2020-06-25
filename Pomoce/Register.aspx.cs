@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security;
+
+using Pomoce.Model;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,23 +22,23 @@ namespace Pomoce
 
         protected void CreateUser_Click(object sender, EventArgs e)
         {
-            var userStore = new UserStore<IdentityUser>();
-            var manager = new UserManager<IdentityUser>(userStore);
-            var user = new IdentityUser() { UserName = UserName.Text };
+			//var userStore = new AspNetUserStore();
+			//var manager = new AspNetUserManager(userStore);
+			//var user = new AspNetUser() { UserName = UserName.Text };
 
-            IdentityResult result = manager.Create(user, Password.Text);
+			//IdentityResult result = manager.Create(user, Password.Text);
 
-            if (result.Succeeded)
-            {
-                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
-                var userIdentity = manager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-                authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
-                Response.Redirect("~/Login.aspx");
-            }
-            else
-            {
-                StatusMessage.Text = result.Errors.FirstOrDefault();
-            }
-        }
+			//if (result.Succeeded)
+			//{
+			//	var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+			//	var userIdentity = manager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+			//	authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+			//	Response.Redirect("~/Login.aspx");
+			//}
+			//else
+			//{
+			//	StatusMessage.Text = result.Errors.FirstOrDefault();
+			//}
+		}
     }
 }
