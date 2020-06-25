@@ -53,7 +53,7 @@
     <asp:SqlDataSource
         ID="SqlDataSource1"
         runat="server"
-        ConnectionString="***REMOVED***"
+        ConnectionString="Data Source=mssql.webio.pl,2401;Initial Catalog=tomek51882_niemojprojekt;User ..."
         ProviderName="System.Data.SqlClient"
         SelectCommand="SELECT [UserApps].[Id], [UserApps].[Name], [AppTypes].[Name] as 'Type' FROM [UserApps] JOIN [AppTypes] ON [UserApps].[AppType]=[AppTypes].Id"></asp:SqlDataSource>
 </asp:Content>
